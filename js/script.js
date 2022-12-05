@@ -38,3 +38,6 @@ let teamMembers = [
     },
 ];
 
+for ( i=0; i < teamMembers.length ; i++) {
+    console.log(teamMembers[i]);
+}
