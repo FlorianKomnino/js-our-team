@@ -59,21 +59,7 @@ let elementsArray = [
 ];
 
 for (let i = 0; i < teamMembers.length; i++) {
-    elementsArray[i].innerHTML = `${String(teamMembers[i].nome)}` + ` ; ` + `${String(teamMembers[i].ruolo)}` + ` ; ` + `${String(teamMembers[i].foto)}`;
+    elementsArray[i].innerHTML = `<div>${String(teamMembers[i].nome)}` + ` ; ` + `${String(teamMembers[i].ruolo)}</div>`;
+    elementsArray[i].innerHTML += '<figure class="h-100 text-center d-flex"></figure>';
+    elementsArray[i].innerHTML += `<img class="h-100 text-center align-self-end" src="./img/${teamMembers[i].foto}" alt="">`;
 }
-
-
-
-/*
-secondRow.innerHTML
-thirdRow.innerHTML
-fourthRow.innerHTML
-fifthRow.innerHTML
-sixthRow.innerHTML
-
-for (i = 0; i < teamMembers.length; i++) {
-    elementsArray[1].innerHTML = teamMembers[i];
-    firstRow.innerHTML = teamMembers
-}
-
-*/
