@@ -38,6 +38,42 @@ let teamMembers = [
     },
 ];
 
-for ( i=0; i < teamMembers.length ; i++) {
+for (i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i]);
 }
+
+let firstRow = document.getElementById('firstRow');
+let secondRow = document.getElementById('secondRow');
+let thirdRow = document.getElementById('thirdRow');
+let fourthRow = document.getElementById('fourthRow');
+let fifthRow = document.getElementById('fifthRow');
+let sixthRow = document.getElementById('sixthRow');
+
+let elementsArray = [
+    firstRow,
+    secondRow,
+    thirdRow,
+    fourthRow,
+    fifthRow,
+    sixthRow
+];
+
+for (let i = 0; i < teamMembers.length; i++) {
+    elementsArray[i].innerHTML = `${String(teamMembers[i].nome)}` + ` ; ` + `${String(teamMembers[i].ruolo)}` + ` ; ` + `${String(teamMembers[i].foto)}`;
+}
+
+
+
+/*
+secondRow.innerHTML
+thirdRow.innerHTML
+fourthRow.innerHTML
+fifthRow.innerHTML
+sixthRow.innerHTML
+
+for (i = 0; i < teamMembers.length; i++) {
+    elementsArray[1].innerHTML = teamMembers[i];
+    firstRow.innerHTML = teamMembers
+}
+
+*/
